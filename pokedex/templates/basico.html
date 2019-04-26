@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POKEDEX</title>
+</head>
+<body>
+{% for pokemon in todos_pokemons %}
+    {{ pokemon.nome }}
+    <img width="50" height="50" src="{{ pokemon.imagem.url }}" >
+    {{ pokemon.fk_categoria.nome }}
+{% endfor %}
+
+</body>
+</html>
